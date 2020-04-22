@@ -1,0 +1,104 @@
+html {
+    /* Root font size */
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    /* Background image styling */
+    background-image: linear-gradient(to left bottom,
+                    rgba(255, 255, 255, 0.8),
+                    rgba(255, 255, 255, 0.8)),
+                    url("https://images.unsplash.com/photo-1543168256-418811576931?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60");
+    background-size: cover;
+}
+
+/* Main list container */
+.shopping-container {
+    background-color: rgba(255, 255, 255, 0);
+    width: 60%;
+    margin: 5rem auto;
+}
+
+/* Media queries to alter width of the shopping-container */
+@media only screen and (max-width: 900px) {
+    .shopping-container {
+        width: 75%;
+        margin: 3rem auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .shopping-container {
+        width: 95%;
+        margin: 2rem auto;
+    }
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.new-item-card {
+    padding: 3rem;
+
+}
+
+.card input {
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: 0 .1rem .1rem;
+}
+
+.clear-all {
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: none;
+    margin-top: 2rem;
+}
+
+.filter-item-card {
+    padding: 3rem;
+
+}
+
+.filter-item {
+    margin-top: 2rem;
+}
+
+
+.shopping-list-card {
+    padding: 3rem;
+
+}
+
+.shopping-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    font-size: 1.2rem;
+    margin: .5rem 0;
+    cursor: pointer;
+
+    transition: all .2s;
+}
+
+.shopping-item:hover {
+    box-shadow: 0 .2rem .2rem;
+}
+
+.new-item input {
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.close {
+    font-size: 2rem;
+}
+
+.close:hover {
+    color: red;
+}
